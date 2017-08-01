@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>The Legend Continues</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+    <div id="Wrapper">
+
+        <div class="Img" id="Sky"></div>
+        <div class="Img" id="Fog1"></div>
+<!--        <div class="Img" id="Fog2"></div>-->
+        <div class="Img" id="Bokoblin"></div>
+        <div class="Img" id="Scroll"></div>
+        <div class="Img" id="slash"></div>
+        <div class="Img" id="sword"></div>
+        <div class="Img" id="Z"></div>
+        <div class="Img" id="E"></div>
+        <div class="Img" id="L"></div>
+        <div class="Img" id="D"></div>
+        <div class="Img" id="A"></div>
+        <div class="Img" id="tLo"></div>
+        <div class="Img" id="Glider"></div>
+        <div class="Img" id="Arrow"></div>
+        <div class="Img" id="Flower"></div>
+        <div class="Img" id="B"></div>
+        <div class="Img" id="O"></div>
+        <div class="Img" id="T"></div>
+        <div class="Img" id="W"></div>
+        <div class="Img" id="Triforce"></div>
+<!--
+        <div class="Img" id="SwitchL"></div>
+        <div class="Img" id="SwitchR"></div>
+-->
+        <div class="Img" id="Replay"></div>
+        <div id="txt1">
+            The
+        </div>
+        <div id="txt2">
+            Legend
+        </div>
+        <div id="txt3">
+            Continues
+        </div>
+    </div>
+    <script type="text/javascript" src="TweenMax.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            var btnTriforce = document.getElementById('Triforce');
+            var replay = document.getElementById('Replay');
+            var tl1 = new TimelineMax();
+            var tl2 = new TimelineMax({ repeat: -1 });
+            var tl3 = new TimelineMax();
+
+            replay.onclick = function () {
+                tl3.reverse();
+                tl2.reverse();
+                tl1.reverse();
+            }
+
+tl1.from('Wrapper', .25, {autoAlpha: 0})
+.to('#txt1', 1.6, {autoAlpha: 1, scale: 1.2, ease: Power4.easeOut})
+.to('#txt1', 1.3, {opacity: 0, scale: 4, ease: Power2.easeOut}, '-=.3')
+.to('#txt2', 1, {autoAlpha: 1, scale: 1.2, ease: Power4.easeOut}, '-=1.3')
+.to('#txt2', 1.3, { opacity: 0, scale: 4, ease: Power2.easeOut }, '-=.3')
+.to('#txt3', 1.3, { autoAlpha: 1, scale: 1.2, ease: Power4.easeOut}, '-=1.3')
+.to('#txt3', 1.7, {opacity: 0, scale: 4, ease: Power2.easeOut}, '-=.3')
+.to('#Scroll', 4.5, {opacity: 0, scale: 1.3}, '-=1.7')
+.from('#Sky', .1, {opacity: 1}, '-=5')
+.from('#Bokoblin', .1, {opacity: 1}, '-=.1')
+.to('#Sky', 8, {backgroundPositionX: 30, ease: Power4.easeOut}, '-=5')
+.to('#Bokoblin', 8, {backgroundPositionX: -94, ease: Power4.easeOut}, '-=8')
+.from('#Z', 3, {scale: 6, top: -500, left: -1000,rotation: -190, ease: Power4.easeOut}, '-=7')
+.from('#slash', 1, {opacity: 0}, '-=3')
+.from('#E', 3, {scale: 6, top: -500, left: -500,rotation: -270, ease: Power4.easeOut}, '-=6')
+.from('#L', 3, {scale: 6, top: -500, left: 0,rotation: 130, ease: Power4.easeOut}, '-=5')
+.from('#D', 3, {scale: 6, top: -500, left: 500,rotation: -90, ease: Power4.easeOut}, '-=4')
+.from('#A', 3, {scale: 6, top: -500, left: 1000,rotation: 180, ease: Power4.easeOut}, '-=3')
+.from('#tLo', 2, {opacity: 0,left: 380, ease: Power4.easeOut}, '-=1')
+.from('#sword', .1, { scale: .8, top: -500, ease: Power4.easeIn })
+.to('#sword', 1, { scale: .8 }, '-=0.1')
+.from('#Glider', 6, { scale: 4, top: -600, left: 1000, rotation: 10, ease: Power0.easeIn }, '-=6.9')
+.from('#Flower', .1, { opacity: 0, scale: .1, top: 300 }, '-=.1')
+.to('#Flower', .6, { opacity: 1, scale: .7, top: 254 }, '-=.1')
+.to('#B', 0.1, { autoAlpha: 1, scale: .35, ease: Power4.easeOut })
+.to('#O', 0.1, { autoAlpha: 1, scale: .25 })
+.to('#T', 0.1, { autoAlpha: 1, scale: .25 })
+.to('#W', 0.1, { autoAlpha: 1, scale: .35, ease: Power4.easeOut })
+            
+
+tl2.to('#Fog1', 120, {
+    backgroundPositionX: 1300,
+    ease: Power0.easeOut
+}) 
+            
+            
+tl3
+//.to(btnTriforce, 3, { autoRotate: 1080, autoAlpha: 1, ease: Power4.easeOut }, '+=7')
+//.to(btnTriforce, 3, { autoRotate: 1080, autoAlpha: 0, ease: Power4.easeIn },)
+.to(replay, 1, { rotate: -1080, autoAlpha: .6, ease: Power4.easeIn }, '+=8')
+.to(replay, .5, { }, '-=.5')
+
+
+//            .to(btnTriforce, 240, { rotationY: 36000, ease: Power0.easeOut })
+        }());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+body {
+    padding: 10px;
+    font-family: 'Triforce';
+}
+
+@font-face {
+    font-family: 'Triforce';
+    src: url('/fonts/Triforce.eot');
+    /* IE9 Compat Modes */
+    src: url('/fonts/Triforce.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/Triforce.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/Triforce.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/Triforce.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/Triforce.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+a#LCLink {
+    display: inline-block;
+    background-color: #09c;
+}
+
+#Wrapper {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    margin: auto;
+/*    visibility: hidden;*/
+}
+
+.Img {
+    position: absolute;
+    background: url(graphics.png) no-repeat 0px 0px;
+}
+
+#slash {
+    width: 122px;
+    height: 149px;
+    background-position: -557px 0px;
+    top: 191px;
+    left: 163px;
+    z-index: 20;
+}
+
+#sword {
+    top: 40px;
+    left: 174px;
+    width: 101px;
+    height: 409px;
+    z-index: 10;
+    transform: scale(.8);
+}
+
+#Z {
+    width: 143px;
+    height: 174px;
+    background-position: -101px 0px;
+    top: 180px;
+    left: 150px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 102, 0.5);
+}
+
+#E {
+    width: 70px;
+    height: 122px;
+    background-position: -244px 0px;
+    top: 208px;
+    left: 276px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 102, 0.5);
+}
+
+#L {
+    width: 60px;
+    height: 122px;
+    background-position: -315px 0px;
+    top: 208px;
+    left: 346px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 102, 0.5);
+}
+
+#D {
+    width: 78px;
+    height: 122px;
+    background-position: -377px 0px;
+    top: 208px;
+    left: 406px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 102, 0.5);
+}
+
+#A {
+    width: 104px;
+    height: 122px;
+    background-position: -455px 0px;
+    top: 208px;
+    left: 468px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 102, 0.5);
+}
+
+#tLo {
+    width: 240px;
+    height: 22px;
+    background-position: -679px 0px;
+    top: 185px;
+    left: 295px;
+}
+
+#Bokoblin {
+    width: 1000px;
+    height: 201px;
+    background-position: 0px -409px;
+    bottom: -20px;
+    left: -50px;
+}
+
+#Glider {
+    width: 300px;
+    height: 410px;
+    background-position: -920px 0px;
+    bottom: 80px;
+    left: 430px;
+}
+
+#Sky {
+    width: 1000px;
+    height: 724px;
+    background-position: 0px -630px;
+    top: -30px;
+    left: -90px;
+}
+
+#Scroll {
+    width: 700px;
+    height: 500px;
+    background-position: 0px -1125px;
+    top: 0;
+    left: 0;
+}
+
+#Arrow {
+    width: 819px;
+    height: 77px;
+    background-position: -101px -173px;
+    top: 80px;
+    left: 700px;
+}
+
+#Flower {
+    width: 71px;
+    height: 102px;
+    background-position: -679px -21px;
+    top: 254px;
+    left: 224px;
+}
+
+#B {
+    width: 441px;
+    height: 125px;
+    background-position: -100px -247px;
+    top: 288px;
+    left: 141px;
+    visibility: hidden;
+}
+
+#O {
+    width: 71px;
+    height: 55px;
+    background-position: -679px -121px;
+    top: 312px;
+    left: 410px;
+    visibility: hidden;
+}
+
+#T {
+    width: 119px;
+    height: 55px;
+    background-position: -749px -121px;
+    top: 327px;
+    left: 391px;
+    visibility: hidden;
+}
+
+#W {
+    width: 298px;
+    height: 125px;
+    background-position: -624px -247px;
+    top: 288px;
+    left: 361px;
+    visibility: hidden;
+}
+
+#Triforce {
+    width: 222px;
+    height: 193px;
+    background-position: -701px -1126px;
+    top: 360px;
+    left: 540px;
+    transform: scale(.3);
+    visibility: hidden;
+}
+#Triangle {
+    width: 222px;
+    height: 193px;
+    background-position: -920px -1126px;
+    top: 360px;
+    left: 540px;
+    transform: scale(.3);
+    visibility: hidden;
+}
+#SwitchL {
+    width: 112px;
+    height: 222px;
+    background-position: -700px -1316px;
+    top: 360px;
+    left: 540px;
+    transform: scale(.3);
+    visibility: hidden;
+}
+#SwitchR {
+    width: 112px;
+    height: 222px;
+    background-position: -810px -1316px;
+    top: 360px;
+    left: 540px;
+    transform: scale(.3);
+    visibility: hidden;
+}
+#Replay {
+    width: 180px;
+    height: 191px;
+    background-position: -1140px -1125px;
+    top: 368px;
+    left: 560px;
+    transform: scale(.25);
+    visibility: hidden; 
+}
+
+#txt1,
+#txt2,
+#txt3 {
+    position: absolute;
+    width: inherit;
+    text-align: center;
+    color: #652;
+    font-size: 7.0em;
+    top: 170px;
+    left: 0px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 102, 0.5);
+    visibility: hidden;
+}
+
+#Fog1 {
+    width: inherit;
+    height: inherit;
+    background-position: 0px -1626px;
+    top: 140px;
+    left: 0px;
+    background-repeat: repeat-x;
+}
+
+#Fog2 {
+    width: inherit;
+    height: inherit;
+    background-position: 0px -1626px;
+    top: 140px;
+    left: 0px;
+    background-repeat: repeat-x;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+}
